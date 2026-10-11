@@ -69,22 +69,19 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
-          <div className="flex items-center gap-2 text-zinc-400">
-            <span className="text-white font-semibold tracking-wide">Talha Anjum</span>
+        {/* Option 4: Centered Frosted Pill Signature Badge */}
+        <div className="pt-8 flex flex-col items-center justify-center">
+          <div className="inline-flex flex-wrap items-center justify-center gap-2.5 px-5 py-2.5 rounded-full bg-[#0d1117]/90 border border-emerald-500/30 hover:border-emerald-500/50 shadow-lg shadow-emerald-500/5 transition-all text-xs">
+            <span className="font-semibold text-white tracking-wide">Talha Anjum</span>
             <span className="text-zinc-600">•</span>
-            <span>Made and designed by</span>
-            <span className="font-gotham font-bold text-white tracking-wide">
+            <span className="text-zinc-400 font-mono">Made & Engineered by</span>
+            <span className="font-gotham font-black text-white tracking-wide">
               Solviq<span className="text-emerald-400">x</span>
             </span>
-          </div>
-          <div className="flex items-center gap-1.5 font-gotham text-zinc-400 text-xs">
-            <span>Powered and engineered by</span>
-            <span className="font-bold text-white">
-              Solviq<span className="text-emerald-400">x</span>
+            <span className="text-zinc-600 hidden sm:inline">•</span>
+            <span className="font-gotham text-zinc-400 text-[11px] hidden sm:inline">
+              Your Vision, Our Digital Expertise
             </span>
-            <span className="text-zinc-600">•</span>
-            <span className="text-zinc-500 text-[11px]">Your Vision, Our Digital Expertise</span>
           </div>
         </div>
       </div>
