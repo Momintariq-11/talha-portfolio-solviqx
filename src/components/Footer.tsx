@@ -3,11 +3,7 @@ import { ArrowUp, Mail, Phone } from 'lucide-react'
 import { PERSONAL_INFO } from '../data/portfolioData'
 import { GithubIcon } from './Icons'
 
-interface FooterProps {
-  showSolvixCredit?: boolean
-}
-
-export const Footer: React.FC<FooterProps> = ({ showSolvixCredit = true }) => {
+export const Footer: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -73,20 +69,23 @@ export const Footer: React.FC<FooterProps> = ({ showSolvixCredit = true }) => {
           </div>
         </div>
 
-        <div className={`pt-6 flex flex-col sm:flex-row items-center ${showSolvixCredit ? 'justify-between' : 'justify-center'} gap-3 text-xs font-mono text-zinc-500`}>
-          <div>
-            © 2026 {PERSONAL_INFO.name}. All rights reserved.
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
+          <div className="flex items-center gap-2 text-zinc-400">
+            <span className="text-white font-semibold tracking-wide">Talha Anjum</span>
+            <span className="text-zinc-600">•</span>
+            <span>Made and designed by</span>
+            <span className="font-gotham font-bold text-white tracking-wide">
+              Solviq<span className="text-emerald-400">x</span>
+            </span>
           </div>
-          {showSolvixCredit && (
-            <div className="flex items-center gap-1.5 font-gotham text-zinc-400 text-xs">
-              <span>Portfolio engineered by</span>
-              <span className="font-bold text-white">
-                Solviq<span className="text-emerald-400">x</span>
-              </span>
-              <span className="text-zinc-600">•</span>
-              <span className="text-zinc-500 text-[11px]">Your Vision, Our Digital Expertise</span>
-            </div>
-          )}
+          <div className="flex items-center gap-1.5 font-gotham text-zinc-400 text-xs">
+            <span>Powered and engineered by</span>
+            <span className="font-bold text-white">
+              Solviq<span className="text-emerald-400">x</span>
+            </span>
+            <span className="text-zinc-600">•</span>
+            <span className="text-zinc-500 text-[11px]">Your Vision, Our Digital Expertise</span>
+          </div>
         </div>
       </div>
     </footer>

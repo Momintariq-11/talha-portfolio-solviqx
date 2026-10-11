@@ -115,7 +115,7 @@ export function App() {
       </main>
 
       {/* ===================== FOOTER ===================== */}
-      <Footer showSolvixCredit={true} />
+      <Footer />
     </div>
   )
 }
